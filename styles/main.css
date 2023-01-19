@@ -5,8 +5,12 @@
   padding:0px;
 }
 
+body {
+  background-color: #fffbf5;
+}
+
 header {
-  background-color: White;
+  background-color: #fffbf5;
   font-family: 'La Belle Aurore', cursive;
   color: #d46e6e;
   padding-top:30px;
@@ -28,7 +32,7 @@ header {
 
 
 #nav-bar {
-  background-color:white;
+  background-color:#fffbf5;
   align-self:flex-end;
 }
 
