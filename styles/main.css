@@ -18,7 +18,6 @@ header {
   flex-direction:row;
   width:100%;
   justify-content:space-between;
-  border-bottom:solid 1px #d46e6e;
   padding-bottom:20px;
 }
 
@@ -66,7 +65,47 @@ li {
 #mushroom-1 {
   margin-right: 20px;
 }
+ /* This section is for the hero image */
+ #hero-section {
+  position:relative;
+ }
+ #hero-image {
+  opacity:70%;
+ }
 
+ #welcome {
+  position:absolute;
+  background-color: white;
+  top: 200px;
+  padding:40px;
+  left:100px;
+  max-width:300px;
+  text-align:center;
+  font-size:1.5rem;
+  border-radius:10px;
+ 
+ }
+
+ #welcome p {
+  font-family:sans-serif;
+  margin-bottom: 20px;
+  font-weight:200;
+ }
+
+ #welcome a {
+  background-color:#d46e6e;
+  position:absolute;
+  width:200px;
+  text-align:center;
+  padding:20px;
+  color:white;
+  font-family: 'La Belle Aurore', cursive;
+  text-decoration: none;
+  border-radius:10px;
+  font-size:2rem;
+ }
+
+/* This section is for the articles */
 .article-header {
   font-size:4rem;
   font-family: 'La Belle Aurore', cursive;
@@ -114,6 +153,7 @@ li {
   margin-left:auto;
   margin-right:auto;
 }
+
 footer {
   display:flex;
   flex-direction:column;
