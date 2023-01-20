@@ -142,6 +142,7 @@ header {
  display:flex;
  flex-direction:column;
  width:300px;
+ font-family:sans-serif;
 }
 .date-time {
   color:#d46e6e;
@@ -150,6 +151,8 @@ header {
 .description {
   background-color:white;
   padding:20px;
+  height:210px;
+  font-family:sans-serif;
 }
 
 .gray {
@@ -180,10 +183,15 @@ header {
 
 .image-reserve {
   width:300px;
-  background-color:white;
+  background-color:#d46e6e;
+  color:white;
   height:200px;
   margin-left:auto;
   margin-right:auto;
+  height:310px;
+}
+.image-reserve p {
+  font-size:3rem;
 }
 
 footer {
