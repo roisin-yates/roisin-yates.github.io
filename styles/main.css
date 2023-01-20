@@ -189,13 +189,17 @@ header {
   width:300px;
   background-color:#d46e6e;
   color:white;
-  height:200px;
   margin-left:auto;
   margin-right:auto;
   height:310px;
 }
 .image-reserve p {
   font-size:3rem;
+}
+
+.image-reserve img {
+  height:310px;
+  width:300px;
 }
 
 footer {
