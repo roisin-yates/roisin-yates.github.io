@@ -32,7 +32,7 @@
   <p><span class="bold">Class:</span> Can be added to an element in html as class=”class-name”, and is then used as a CSS selector by adding a period (.) before the class - .class-name {}
   </p>
   <h3>Specificity Heirarchy</h3>
-  <p>Each CSS selector is part of a styling hierarchy, the 'specificity hierarchy', this means that if an element used multiple selectors, highest in the hierarchy will cancel the others out and will be the only one to take effect. The hierarchy is as follows:
+  <p>Each CSS selector is part of a styling hierarchy, the 'specificity hierarchy', this means that if an element used multiple selectors, the highest in the hierarchy will cancel the others out and will be the only one to take effect. The hierarchy is as follows:
   </p>
 <div>
   <ol>
@@ -61,7 +61,7 @@
 <p class="note">Note: Although ID is more specific, an element can be styled with a class selector as well, as long as they are not styling the same property. </p>
 
 <h3>Specific vs General </h3>
-<p>You may be thinking “why would you ever use class then if ID always overrides it!?!”. Using Id selectors to style every element individually can make your code very long and messy, especially if multiple elements are styled the same way. This is where class really shines. </p>
+<p>You may be thinking “why would you ever use class then if ID always overrides it!?!”. Using ID selectors to style every element individually can make your code very long and messy, especially if multiple elements are styled the same way. This is where class really shines. </p>
 <p>Due to its position in the specificity hierarchy, IDs should be thought of as unique identifiers. Multiple elements should not share the same ID.</p>
 <p>Class selectors can apply to multiple elements and should be used as more general identifiers. Elements can have both an ID and class selector, and can actually have more than one class selector. </p>
 
@@ -86,7 +86,7 @@
 </div>
 
 
-<p>This saves time and helps to keep your code clean. Look at these mushrooms. They’re all different sizes styled through their ID, but one has the class .pink, which colours it pink, while the other has the class .blue which colours them blue. It makes my code much cleaner by reusing the class selectors rather than typing it out again each time I want to make a new mushroom. 
+<p>This saves time and helps to keep your code clean. Look at these mushrooms. Their positioning is styled through their IDs, but one has the class .pink, which colours it pink, while the other has the class .blue which colours it blue. It makes my code much cleaner by reusing the class selectors rather than typing it out again each time I want to make a new mushroom. 
 </p>
 
 <h3>Summary</h3>
