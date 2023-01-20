@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/main.css" type="text/css">
+  <link rel="stylesheet" href="styles/html-css.css" type="text/css">
+
+  <title>Roisin Yates' Blog</title>
+</head>
+<body>
+  <header id="header">
+    <h1 id="blog-title">Roisin's blog</h1>
+    <nav id="nav-bar">
+      <ul id="nav-links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Core</a></li>
+        <li><a href="#">Tech</a></li>
+      </ul>
+    </nav>
+    <img src="img/shutterstock_1719555385.png" alt="" width="250px" id="mushroom-1">
+  </header>
+
+  <div id="html-css-article">
+  <h2>The best practices associated with using Classes and IDs?</h2>
+  <p class ="bold"> ID and class selectors are important tools to use when setting up a website, but knowing when and how to use them can often be confusing, even for experienced coders. Understanding the best practices for using these selectors can make your code easier, quicker and tidier to read and write. </p>
+  <h3>Using ID and Class</h3>
+  <p><span class="bold">ID:</span> can be added to an element in html as id=”id-name”, and is then used as a CSS selector by adding a hash (#) before the id - #id-name {}
+  </p>
+  <p><span class="bold">Class:</span> Can be added to an element in html as class=”class-name”, and is then used as a CSS selector by adding a period (.) before the class - .class-name {}
+  </p>
+  <h3>Specificity Heirarchy</h3>
+  <p>Each CSS selector is part of a styling hierarchy, the 'specificity hierarchy', this means that if an element used multiple selectors, highest in the hierarchy will cancel the others out and will be the only one to take effect. The hierarchy is as follows:
+  </p>
+<div>
+  <ol>
+    <li>Using <span class="bold">!important</span></li>
+    <li>Inline-styles - using the &ltstyle&gt &lt/style&gt in your HTML file</li>
+    <li>ID</li>
+    <li>Class</li>
+    <li>Elements/pseudo-elements - H1 etc</li>
+  </ol>
+</div>
+
+<div id="html-mushroom-code">
+<div id="html-mushroom">
+  <div id="mushroom-hat" class="red">
+  </div>
+  <div id="mushroom-base">
+  </div>
+    <img src="./img/mushroom-1-html.png" alt="html code for the first mushroom, demonstrating id and class selectors">
+    <img src="./img/mushroom-1-css.png" alt="css code for the first mushroom, demonstrating id and class selectors">
+    </div>
+</div>
+
+
+ <p>This is very important for distinguishing the difference between ID and class. Look at this mushroom for example, the ID selector styles the color as red, while the class selector styles it as brown. The ID selector overrides class, so the mushroom is red. 
+</p>
+<p class="note">Note: Although ID is more specific, an element can be styled with a class selector as well, as long as they are not styling the same property. </p>
+
+<h3>Specific vs General </h3>
+<p>You may be thinking “why would you ever use class then if ID always overrides it!?!”. Using Id selectors to style every element individually can make your code very long and messy, especially if multiple elements are styled the same way. This is where class really shines. </p>
+<p>Due to its position in the specificity hierarchy, IDs should be thought of as unique identifiers. Multiple elements should not share the same ID.</p>
+<p>Class selectors can apply to multiple elements and should be used as more general identifiers. Elements can have both an ID and class selector, and can actually have more than one class selector. </p>
+
+
+<div id="mushroom-pair">
+<div id="html-mushroom-2">
+  <div id="mushroom-hat-2" class="pink">
+  </div>
+  <div id="mushroom-base-2">
+  </div>
+</div>
+<div id="html-mushroom-3">
+  <div id="mushroom-hat-3" class="blue">
+  </div>
+  <div id="mushroom-base-3">
+  </div>
+</div>
+</div>
+<div id="html-mushroom-pair-code">
+<img id="mushroom-pair-html"src="./img/mushroom-2-html.png" alt="html code of mushrooms 2 & 3 demonstrating id and class selectors">
+<img id="mushroom-pair-css" src="./img/mushroom-2-css.png" alt="css code of mushrooms 2 & 3 demonstrating id and class selectors">
+</div>
+
+
+<p>This saves time and helps to keep your code clean. Look at these mushrooms. They’re all different sizes styled through their ID, but one has the class .pink, which colours it pink, while the other has the class .blue which colours them blue. It makes my code much cleaner by reusing the class selectors rather than typing it out again each time I want to make a new mushroom. 
+</p>
+
+<h3>Summary</h3>
+<div id="summary">
+<div id="id-table">
+  <h4>ID:</h4>
+<ul>
+  <li>Specific</li>
+  <li>Elements should only have one ID, and each ID should be unique</li>
+  <li>Overrides class selectors</li>
+  <li>Used in CSS as #id-name</li>
+</ul>
+</div>
+<div id="class-table">
+  <h4>Class:</h4>
+  <ul>
+<li>General</li>
+<li>Elements can have more than one class, and classes can be reused</li>
+<li>Overrides element selectors, but is overridden by ID selectors</li>
+<li>Used in CSS as .class-name</li>
+</ul>
+</div>
+</div>
+<p>Play around with Class and ID selectors until you get the hang of using them. Everyone writes code differently, but the most important thing is to stay consistent and follow the best practices to keep your code accessible and maintainable. </p>
+
+</div>
+
+  <footer>
+    <div id="footer-image-div">
+    <img src="img/shutterstock_2139524045.png" alt="footer image of log and mushrooms" width="80%" id="footer-image">
+  </div>
+    <div id="footer-bar">
+      <p>Blog by Roisin</p>
+      <ul>
+        <li>no links yet</li>
+        </ul>
+    </div>
+  </footer>
+  </body>
+  
+ 
+  
+  </html>
