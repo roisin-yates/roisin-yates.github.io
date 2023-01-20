@@ -373,6 +373,14 @@ margin-bottom:50px;
   margin-bottom:10px;
 }
 
+
+
+/* The following is for the learning-plan.html */
+.paragraph-with-image {
+  display:flex;
+  justify-content:center;
+}
+
 @media (min-width: 1400px) {
   #welcome {
     top:300px;
