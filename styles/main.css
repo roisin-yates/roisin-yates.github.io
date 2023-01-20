@@ -258,6 +258,9 @@ margin-right:auto;
 
 .article-body h3 {
   font-size:2rem;
+  width:900px;
+  margin-left:auto;
+  margin-right:auto;
 }
 ol {
   margin-left:50px;
