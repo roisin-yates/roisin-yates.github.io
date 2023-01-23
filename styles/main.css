@@ -410,7 +410,32 @@ margin-right:auto;
 }
 
 
+/* The following was added for emotional-intelligance  */
 
+.table-section {
+  max-width:900px;
+  display:flex;
+  justify-content:space-around;
+  margin-left:auto;
+  margin-right:auto;
+}
+.table {
+  background-color:aliceblue;
+  padding:20px;
+  max-width:300px;
+  min-width:150px;
+  margin-top:50px;  
+  margin-bottom:50px;
+  flex-direction:column;
+  justify-content: space-around;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.table ul {
+  padding-left:20px;
+  padding-right:20px;
+}
 
 
 /* This section is for the media queries */
@@ -499,6 +524,16 @@ margin-right:auto;
 
 #te-houtaewa-heading {
   width:70%;
+}
+
+.table-section {
+  flex-direction:column;
+  width:90%;
+}
+
+.table {
+  margin-left:auto;
+  margin-right:auto;
 }
 
 }
