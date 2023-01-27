@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Water+Brush&display=swap');
 
 * {
   margin:0px;
@@ -285,6 +285,9 @@ margin-right:auto;
   font-weight:800;
 }
 
+.emphasis-font {
+  font-family: 'Water Brush';
+}
 
 /* the following is mushroom code */
 #html-mushroom-code,
@@ -437,7 +440,24 @@ margin-right:auto;
   padding-right:20px;
 }
 
+.article-list {
+  max-width:800px;
+  margin-left:auto;
+  margin-right:auto;
+}
 
+.article-list li {
+  margin-bottom:10px;
+}
+
+code {
+  background-color:lightgray;
+}
+
+.image-div {
+display:flex;
+justify-content:center;
+}
 /* This section is for the media queries */
 @media (max-width:1000px) {
 
