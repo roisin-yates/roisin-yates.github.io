@@ -444,6 +444,8 @@ margin-right:auto;
   max-width:800px;
   margin-left:auto;
   margin-right:auto;
+  padding-left:20px;
+  padding-right:20px;
 }
 
 .article-list li {
@@ -555,6 +557,11 @@ margin-right:auto;
   margin-left:auto;
   margin-right:auto;
 }
+.article-list {
+  padding-left:40px;
+  padding-right:40px;
+}
+
 
 }
 
