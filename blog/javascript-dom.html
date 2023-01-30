@@ -28,134 +28,185 @@
     </div>
 
     <h2>JavaScript and the DOM</h2>
-    <p class="date-time">Fri 27 Jan 2023</p>
+    <p class="date-time">
+      Fri 27 Jan 2023
+    </p>
 
     <h3>What is <span class="emphasis-font">JavaScript?</span></h3>
-    <p>Javascript is one of the most widely used programming languages, and for good reason. Javascript can be used to 
+    <p>
+      Javascript is one of the most widely used programming languages, and for good reason. Javascript can be used to 
       add interactivity to a webpage, game, application, and almost anything you can think of. When combined with HTML and CSS, 
-      it creates a reactive and interactive webpage.</p>
-    <p>Together, Javascript, HTML and CSS form the core programming languages of front-end and web development.</p>
-    <p>You can think of it as a paintbrush, as the title font may have indicated. In web development, 
+      it creates a reactive and interactive webpage.
+    </p>
+    <p>
+      Together, Javascript, HTML and CSS form the core programming languages of front-end and web development.
+    </p>
+    <p>
+      You can think of it as a paintbrush, as the title font may have indicated. In web development, 
       HTML forms the structure, the canvas. Primed with gesso, texturised, and with a plan of the painting applied, 
       a primed canvas is where most paintings begin. In and of itself, a canvas can be appreciated - 
-      there is still a lot you can experience from a primed canvas. But how does the finished piece emerge?</p>
-    <p>Through CSS color is introduced. Color can be mixed and form created. It can also create a satisfying and beautiful piece, 
-      but without the paintbrush, movement and emotion can't be added. </p>
-    <p>With a paintbrush in hand, the artist can create a masterpiece. They can reflect life, or they can create abstract,
-       thoughtful pieces. Art evokes emotion, and the paintbrush helps to create that experience.</p>
-    <p>Just like the paintbrush, Javascript creates movement within a website. It takes the HTML canvas and CSS medium and creates 
-      an interactive experience for users.</p>
+      there is still a lot you can experience from a primed canvas. But how does the finished piece emerge?
+    </p>
+    <p>
+      Through CSS color is introduced. Color can be mixed and form created. It can also create a satisfying and beautiful piece, 
+      but without the paintbrush, movement and emotion can't be added. 
+    </p>
+    <p>
+      With a paintbrush in hand, the artist can create a masterpiece. They can reflect life, or they can create abstract,
+       thoughtful pieces. Art evokes emotion, and the paintbrush helps to create that experience.
+    </p>
+    <p>
+      Just like the paintbrush, Javascript creates movement within a website. It takes the HTML canvas and CSS medium and creates 
+      an interactive experience for users.
+    </p>
 
     <h3>What is control flow?</h3>
-<p>Control flow describes the order in which code is executed. In Javascript, 
-  this generally means running from the first line of code to the last in that order. 
-  This is unless Javascript is instructed to change direction. 
-  This is most commonly experienced with <span class="bold">loops.</span></p>
-  <p><span class="bold">Loops</span> instruct the browser to run through the internal code a set number of times, 
-    redirecting the control flow until fully executed. They take many forms, such as the <code>for</code> loop, <code>for...of</code>, <code>for...in</code>, <code>do...while</code> etc. 
-    They may appear confusing and unintuitive at first, but they can get a little easier when you realise that many everyday actions 
-    can be thought of in terms of a loop. Take having a dinner party for example: the control flow leads you from inviting your guests in, sitting them down, interacting with them, 
-    eating with them, and then saying goodbye. But there are several loops in there somewhere that interrupt that flow as you have to complete them 
-    the specified number of times until you can move on to the next. When you're serving up dinner you have to place the food on the plate
-    as many times as needed until you can serve everyone - if you have four guests, you repeat it four times etc.
-  </p>
-  <p>If you want to get deeper into loops, you could also throw <span class="bold">conditionals</span> in there too, like an <code>if</code> statement. While you're going through 
-  your plating up food loop, if your guest can't eat a certain ingredient, you can skip over it, or give them something else instead, and then loop around to the next guest. </p>
-  <p>Once you begin to think of loops and conditionals as phsyical actions like this, they become a lot less intimidating.</p>
+    <p>
+      Control flow describes the order in which code is executed. In Javascript, 
+      this generally means running from the first line of code to the last in that order. 
+      This is unless Javascript is instructed to change direction. 
+      This is most commonly experienced with <span class="bold">loops.</span>
+    </p>
+    <p>
+      <span class="bold">Loops</span> instruct the browser to run through the internal code a set number of times, 
+      redirecting the control flow until fully executed. They take many forms, such as the <code>for</code> loop, <code>for...of</code>, <code>for...in</code>, <code>do...while</code> etc. 
+      They may appear confusing and unintuitive at first, but they can get a little easier when you realise that many everyday actions 
+      can be thought of in terms of a loop. Take having a dinner party for example: the control flow leads you from inviting your guests in, sitting them down, interacting with them, 
+      eating with them, and then saying goodbye. But there are several loops in there somewhere that interrupt that flow as you have to complete them 
+      the specified number of times until you can move on to the next. When you're serving up dinner you have to place the food on the plate
+      as many times as needed until you can serve everyone - if you have four guests, you repeat it four times etc.
+    </p>
+    <p>
+      If you want to get deeper into loops, you could also throw <span class="bold">conditionals</span> in there too, like an <code>if</code> statement. While you're going through 
+      your plating up food loop, if your guest can't eat a certain ingredient, you can skip over it, or give them something else instead, 
+      and then loop around to the next guest. 
+    </p>
+    <p>
+      Once you begin to think of loops and conditionals as phsyical actions like this, they become a lot less intimidating.
+    </p>
 
-  <h3>What is the DOM, and how can I interact with it?</h3>
-  <p>The DOM, or <span class="bold">Document Object Model</span> is a representation of a webpage, or document, as a tree-like structure, or <span class="bold">Node Tree</span>.
-  Like a family tree, the node tree represents the structure of the document, its content and how each element, or <span class="bold">nodes</span> relate to each other. 
-  Every HTML element is its own node. Nodes are divided into a heirarchy of anscestors and descendents: <span class="bold">grand-parent</span> nodes,
-<span class="bold">parent</span> nodes, and <span class="bold">child</span> nodes.</p>
-<p><span class="bold">But what's the point of all this?</span>The answer lies at the top of the tree: every node is descended from the <code>document</code>. 
-Calling the document in your code allows a user or programmer to interact with and manipulate every single node on a webpage. You can do this in Javascript by 
-searching for the node you want to affect with: <code>document.querySelector('ThisIsTheNodeYouAreLookingFor')</code> for example.</p>
-<p>Finding the node then creates endless possibilities, you could:</p>
+    <h3>What is the DOM, and how can I interact with it?</h3>
+    <p>
+      The DOM, or <span class="bold">Document Object Model</span> is a representation of a webpage, or document, as a tree-like 
+      structure, or <span class="bold">Node Tree</span>. Like a family tree, the node tree represents the structure of the document, 
+      its content and how each element, or <span class="bold">nodes</span> relate to each other. 
+      Every HTML element is its own node. Nodes are divided into a heirarchy of anscestors and descendents: <span class="bold">grand-parent</span> nodes,
+      <span class="bold">parent</span> nodes, and <span class="bold">child</span> nodes.
+    </p>
+    <p>
+      <span class="bold">But what's the point of all this?</span>The answer lies at the top of the tree: every node is descended from 
+      the <code>document</code>. Calling the document in your code allows a user or programmer to interact with and manipulate every 
+      single node on a webpage. You can do this in Javascript by searching for the node you want to affect with: 
+      <code>document.querySelector('ThisIsTheNodeYouAreLookingFor')</code> for example.
+    </p>
+    <p>
+      Finding the node then creates endless possibilities, you could:
+    </p>
+
     <ul class="article-list">
       <li>Manipulate the code immediately when the page loads by changing it, for example changing the colour of the text with <code>document.querySelector('.class').style.color = "pink"</code></li>
       <li>Add an Event Listener, like a cue that indicates when the code can be manipulated through actions on the webpage, for example when you click on a button it changes the color to pink: 
         <code>document.querySelector('button').addEventListener('click', functionThatChangesColor)</code> </li>
     </ul>
 
-<p>Back to the dinner party analogy, the last time though, I promise. Within your dinner party the DOM could be seen in the following way:</p>
+    <p>
+      Back to the dinner party analogy, the last time though, I promise. Within your dinner party the DOM could be seen in the 
+      following way:
+    </p>
     <ul class="article-list">
       <li><span class="bold">Document: </span>The dining room</li>
       <li><span class="bold">The Node Tree: </span>The seating arrangement</li>
       <li><span class="bold">The Nodes: </span>Your guests</li>
       <li><span class="bold">Event Listeners: </span>Social cues</li>
     </ul>
-  <p>To serve dinner to a guest you must go to the dining room, walk past the other guests in the seating arrangement until you get to your chosen one, wait for a cue,
-    like the clock striking 7pm (or a complaint if you're not good at time management), then place the food down in front of them, or: 
-    <code>document.querySelector('guest').addEventListener('complaint', serveDinnerFunction)</code>
-  </p>
+    <p>To serve dinner to a guest you must go to the dining room, walk past the other guests in the seating arrangement until you get to your chosen one, wait for a cue,
+      like the clock striking 7pm (or a complaint if you're not good at time management), then place the food down in front of them, or: 
+      <code>document.querySelector('guest').addEventListener('complaint', serveDinnerFunction)</code>
+    </p>
 
-  <h3>Functions?</h3>
-  <p>Functions are instructions given to your browser to do certain things. There are really just endless possibilities for what you 
-    could do with a function, it's up to what you put in the block of code. They are very useful pieces of code as they are re-usable, so you can 
-    keep calling one line every time you want to use it rather than rewriting out your code every single time. 
-  </p>
-  <p>You begin writing a basic function by using the <span class="bold">function keyword</span> and the <span class="bold">name</span> 
-    of your function followed by brackets: <span class="bold">()</span> and curly brackets: <span class="bold">{}</span>. The things that you want
-  to happen go between the curly brackets. Like so: </p>
+    <h3>Functions?</h3>
+    <p>
+      Functions are instructions given to your browser to do certain things. There are really just endless possibilities for what you 
+      could do with a function, it's up to what you put in the block of code. They are very useful pieces of code as they are re-usable, so you can 
+      keep calling one line every time you want to use it rather than rewriting out your code every single time. 
+    </p>
+    <p>
+      You begin writing a basic function by using the <span class="bold">function keyword</span> and the <span class="bold">name</span> 
+      of your function followed by brackets: <span class="bold">()</span> and curly brackets: <span class="bold">{}</span>. The things that you want
+      to happen go between the curly brackets. Like so: 
+    </p>
   
-  <div class="image-div">
-  <img class="image" src="../img/function-example-1.png" alt="Example of a simple function with the layout: function thisIsMyFunction() {}">
-</div>
+    <div class="image-div">
+      <img class="image" src="../img/function-example-1.png" alt="Example of a simple function with the layout: function thisIsMyFunction() {}">
+    </div>
 
-<p>You can place parameters within the brackets as placeholders to make your code re-usable. For example, if you want to do the same thing
-  to different elements on the page, you can put a placeholder in the brackets and replace the element you want to change with the placeholder in your code. parameters
-  can have any name, it doesn't really matter what you call them as they're just placeholders
-  for other elements. For example:
-</p>
-<div class="image-div">
-  <img src="../img/function-example-2.png" alt="Example of a simple function with the parameter of 'parameter'">
-</div>
-<p>To implement your function, you need to call it. You do this by calling the name alongside empty brackets for functions without a parameter: <code>thisIsMyFunction()</code>
-, or with the element you want to use to replace the placeholder: <code>thisIsMyFunction(elementIWantToUse)</code></p>
+    <p>
+      You can place parameters within the brackets as placeholders to make your code re-usable. For example, if you want to do the same thing
+      to different elements on the page, you can put a placeholder in the brackets and replace the element you want to change with the placeholder in your code. parameters
+      can have any name, it doesn't really matter what you call them as they're just placeholders
+      for other elements. For example:
+    </p>
+    <div class="image-div">
+      <img src="../img/function-example-2.png" alt="Example of a simple function with the parameter of 'parameter'">
+    </div>
+    <p>To implement your function, you need to call it. You do this by calling the name alongside empty brackets for functions without a parameter: <code>thisIsMyFunction()</code>
+    , or with the element you want to use to replace the placeholder: <code>thisIsMyFunction(elementIWantToUse)</code>
+    </p>
 
 
-<h3>The difference between arrays and objects</h3>
-<p>At first glance, arrays and objects appear very similar and it can be difficult to distinguish the appropriate times to use each.
-  They both hold collections of data.
-</p>
+    <h3>The difference between arrays and objects</h3>
+    <p>
+      At first glance, arrays and objects appear very similar and it can be difficult to distinguish the appropriate times to use each.
+      They both hold collections of data.
+    </p>
 
-<p>Planning for your dinner party may help (I'm sorry, I lied..... But this is the last time now).</p>
-<ul class="article-list">
-  <li><span class="bold">Arrays: </span> An array is like the menu that you will give your guests. You would lay out each course
-  on your menu separately from one another, but it would all come under the title of your menu. It's the same with arrays: They are a list of elements stored 
-under a single element. Your menu array could look like: <br>
- <code>Menu['Bruschetta', 'Soup', 'Fish', 'Tiramisu']</code></li>
-<li><span class="bold">Objects: </span>Objects are like a more detailed version of your list. They contain properties that represent different types of
-information about that object in key value pairs. They would be like the recipe for each course on your menu with different points of information describing the 
-properties, it would written like: <br>
- <code>Bruschetta = { <br>
-  process: 'toasted', <br>
-  breadType: 'chiabatta', <br>
-  garlic: true, <br>
-  ingredientsCost: 13 }
-</code></li>
-</ul>
+    <p>
+      Planning for your dinner party may help (I'm sorry, I lied..... But this is the last time now).
+    </p>
+    <ul class="article-list">
+      <li>
+        <span class="bold">Arrays: </span> An array is like the menu that you will give your guests. You would lay out each course
+        on your menu separately from one another, but it would all come under the title of your menu. It's the same with arrays: 
+        They are a list of elements stored under a single element. Your menu array could look like: 
+        <br><code>Menu['Bruschetta', 'Soup', 'Fish', 'Tiramisu']</code>
+      </li>
+      <li>
+        <span class="bold">Objects: </span>Objects are like a more detailed version of your list. They contain properties that 
+        represent different types of information about that object in key value pairs. They would be like the recipe for each 
+        course on your menu with different points of information describing the properties, it would written like: 
+        <br><code>Bruschetta = { 
+        <br>process: 'toasted', 
+        <br>breadType: 'chiabatta', 
+        <br>garlic: true, 
+        <br>ingredientsCost: 13 } </code>
+      </li>
+    </ul>
 
-<p>As their structure is different, so is their use. They can be accessed by:</p>
-<ul class="article-list">
-  <li><span class="bold">Arrays: </span>Calling on a property via the index. Items in programming start from 0 rather than 1, so if someone asked about
-  your 'bruschetta' on the menu, they would call it as: <code>bruschetta[0]</code>.</li>
-  <li><span class="bold">Objects: </span>Calling on a value via the key, in dot notation or bracket notation. The type of bread in your bruschetta would be called by 
-  from <code>bruschetta.breadType</code> , or <code>bruschetta[breadType]</code> </li>
-</ul>
+    <p>As their structure is different, so is their use. They can be accessed by:</p>
+    <ul class="article-list">
+      <li>
+        <span class="bold">Arrays: </span>Calling on a property via the index. Items in programming start from 0 rather than 1, 
+        so if someone asked about your 'bruschetta' on the menu, they would call it as: <code>bruschetta[0]</code>.
+      </li>
+      <li>
+        <span class="bold">Objects: </span>Calling on a value via the key, in dot notation or bracket notation. The type of bread 
+        in your bruschetta would be called by from <code>bruschetta.breadType</code> , or <code>bruschetta[breadType]</code> 
+      </li>
+    </ul>
 
     <footer>
-    <div id="footer-image-div">
-    <img src="../img/shutterstock_2139524045.png" alt="footer image of log and mushrooms" width="80%" id="footer-image">
-  </div>
-    <div id="footer-bar">
-      <p>Blog by Roisin</p>
-      <ul>
-        <li>no links yet</li>
+      <div id="footer-image-div">
+        <img src="../img/shutterstock_2139524045.png" alt="footer image of log and mushrooms" width="80%" id="footer-image">
+      </div>
+      <div id="footer-bar">
+        <p>
+          Blog by Roisin
+        </p>
+        <ul>
+          <li>no links yet</li>
         </ul>
-    </div>
-  </footer>
-</div>
-  </body>
-  </html>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
