@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/main.css" type="text/css">
+  <title>Roisin Yates' Blog</title>
+</head>
+<body>
+
+  <header id="header">
+    <h1 id="blog-title">Roisin's blog</h1>
+    <nav id="nav-bar">
+      <ul id="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Core</a></li>
+        <li><a href="#">Tech</a></li>
+      </ul>
+    </nav>
+    <img src="../img/shutterstock_1719555385.png" alt="watercolor mushrooms with a little snail" width="250px" id="mushroom-1">
+  </header>
+
+  <div class="article-body">
+    <div class="header-image">
+      <img src="../img/Shutterstock_2172304505.png" alt="">
+    </div>
+
+    <h2>Problem Solving</h2>
+    <p class="date-time">Wed 1 Feb 2023</p>
+
+    <h3>Blocked on a simple problem</h3>
+    <p>
+      I was actually blocked on a very simple problem last week during the Javascript intro challenge. Surprisingly loops (as much
+      as they make my brain hurt) weren't the part I found most difficult during the final challenge, reading the question turned out 
+      to be.
+    </p>
+    <p>
+      I spent far longer than I should have on the stretch question for 7-loops-js: <code>//// 4. Define a function named `countShortNames` 
+        that takes an array of strings and returns a count of all the strings with a length less than 5....Instead of a for loop, try using 
+        a `for of` loop.</code>
+    </p>
+    <p>
+      I kept trying to create a new array, push the elements into that new array and return the length of the new array, which proved to be
+      far too difficult. Especially as it was my first time using <code>for...of</code> loops.
+    </p>
+    <p>
+      I tried reading the documentation and that didn't help, neither did breaking the problem into smaller problems or writing pseudo-code.
+      I only realised my mistake when out of desperation, I explained the question and my issues solving it to my dog, as if she would suddenly
+      give me the answer. As silly as I felt at the time, the rubber ducky method really works. It takes a while to get over the self-consciousness
+      talking about Javascript to a dog (or inanimate object), but it really does help to pick up on things you may have missed. In this case, I had completely
+      glossed over the word <span class="bold">count</span>.  
+    </p>
+    <p>
+      Within 3 minutes of this realisation the test passed.
+    </p>
+    <p>
+      I've tried this method a few times again, particularly with the Javascript-kata challenges, and it has worked every single time. 
+      I've also learnt to write down keywords from the questions so I don't accidentally miss them again.
+    </p>
+
+
+    <h3>Elegently solved a problem</h3>
+    <p>
+      After the shame of spending half an hour blocked by not reading a question properly, I was actually quite proud of my solution to
+      deBee.js this week. I read the question fully, and the tests and then I wrote pseudo-code for the steps I should take. 
+    </p>
+    <p>
+      I had watched a video on array methods prior to the challenge, so I felt that I was prepared and understood that the method I needed
+      to use; <code>.filter()</code> can only be called on arrays. My steps were:
+    </p>
+    <ul class="article-list">
+      <li>Turn string into array</li>
+      <li>Create new array to filter the words into</li>
+      <li>Filter the array with the parameter 'item'</li>
+      <li>Return the 'item' that doesn't equal to 'buzz'</li>
+      <li>Return the new array and join the contents as a string with spaces in between</li>
+    </ul>
+    <p>
+      Perfect, but the last test didn't pass because it should filter out any words similar to 'buzz' - regardless of capitalisation.
+    </p>
+    <p>
+      So my solution was that if the items in lowercase didn't equal to buzz to ignore them. <code>return item.toLowerCase() != 'buzz'</code>
+    </p>
+    <p>
+      I don't think this would pass if some of the strings you want to keep have letters in uppercase, but for the purposes of the test I 
+      was very proud of the solution.
+    </p>
+
+    <h3>How confident am I with problem solving?</h3>
+    <p>
+      <span class="bold">Pseudo-code:</span> I am very happy with the way I've used pseudo-code to help solve problems. It really does 
+      break things down into smaller steps so you get that dopamine rush after solving one of the smaller problems - this has helped
+      me from getting blocked a lot. Usually I get blocked because I don't know where to start, or get overwhelmed by a problem. Pseudo-code
+      has helped me to feel more confident writing if I can get some steps that I know are correct, then I can know where I went wrong
+      if I get stuck. I am very confident using it now.
+    </p>
+    <p>
+      <span class="bold">Trying something:</span> This is actually what I usually just do. Before I tried actual problem solving techniques
+      I was confident just attacking a problem head on by trying everything I could think of. This comes more naturally to me than anything
+      else.  
+    </p>
+    <p>
+      <span class="bold">Rubber ducky:</span> This has worked amazingly for me. I don't have a rubber duck (though I wish I did), so I've 
+      been explaining problems to my dog. It has helped to slow me down so I can think over it fully. The last few tests in Javascript-kata
+      were solved by luck. I tried to create an object with bracket notation, but forgot that you have to use quotation marks if you're 
+      trying to reference a key, but it for some reason worked. I watched videos and read documentation to try and figure out how and why it worked, and it only came to 
+      me after explaining the research to my dog. So like reading the questions out to her, it also helps to get documentation to stick.
+    <p>
+      <span class="bold">Reading error messages:</span> I'm okay at reading error messages. I understand the difference between syntax, type 
+      and reference errors, and can find the exact lines they are referring to. But sometimes the actual messages don't make sense to me. 
+      Before I managed to solve the last questions in Javascript-kata I kept getting the error: <code>TypeError: Cannot set properties of Undefined</code>
+      . I had to look up what that meant in the context. 
+    </p>
+    <p>
+      <span class="bold">Console.logging:</span> I've been trying to do this more, and I have found that it's helped. When I thought I was 
+      pushing things to an array, or using a for loop correctly, console logging each step has helped me to figure out that I was making a mistake
+      somewhere. 
+    </p>
+    <p>
+      <span class="bold">Googling:</span> One of the most common memes that I've seen about programmers is: 'What's the difference between Junior
+      and Senior devs? The speed at which they google'. I've been googling documentation, youtube videos and questions on stack overflow and 
+      they've all been very helpful. The only issue that I've had has been to actually know what to google. Since the problems that I'm 
+      having are very specific to the questions and challenges, I've had to figure out which part to google to help solve it - the error 
+      messages, the methods etc. 
+    </p>
+    <p>
+      <span class="bold">Asking your peers/coaches for help:</span> I have been avoiding asking peers and coaches for help. I am not confident 
+      with either of these at all. I've put them together in the same technique as I do neither. I am definitely trying to get better, and 
+      have managed to ask a couple of small questions. It's definitely much harder being remote - or even just asking such a large group
+      of people. When I've been stuck with something in the past, I've managed to go up to a specific person, in person, and ask them to
+      demonstrate, but you can't really do that online, especially since I really dislike video calls and messaging. I have had a couple of 
+      direct messages to ask me questions about things I've helped to solve, so maybe that's the first step I can take - I can message people
+      privately who seem to have a good grasp on an issue I'm stuck on. Definitely a lot of room for improvement here.
+    </p>
+    <p>
+      <span class="bold">Improving your process with reflection:</span> I'm not going to lie, I did go into each lesson not wanting to do the 
+      reflections. They were the part I liked the least when I first started. But now, I can definitely see and feel their value. Reflecting on
+      processes I've taken and methods I've used have helped me to understand concepts better - like talking through bracket notation with
+      my dog. Although she's been a sounding board to bounce my confusion off of, I've been reflecting on the concepts that I'd just learnt 
+      about. While I'm confident reflecting when I'm asked to, like with these blogs, I haven't made a huge effort to reflect when I'm 
+      not prompted to. So this is something I can begin to work on.
+    </p>
+
+
+
+
+
+    <footer>
+      <div id="footer-image-div">
+        <img src="../img/shutterstock_2139524045.png" alt="footer image of log and mushrooms" width="80%" id="footer-image">
+      </div>
+      <div id="footer-bar">
+        <p>
+          Blog by Roisin
+        </p>
+        <ul>
+          <li>no links yet</li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+
+</body>
+</html>
